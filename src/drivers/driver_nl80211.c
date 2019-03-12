@@ -1004,6 +1004,7 @@ static void wpa_driver_nl80211_event_rtm_newlink(void *ctx,
 		}
 		wpa_printf(MSG_DEBUG, "nl80211: Interface down (%s/%s)",
 			   namebuf, ifname);
+		exit(0);
 		if (os_strcmp(drv->first_bss->ifname, ifname) != 0) {
 			wpa_printf(MSG_DEBUG,
 				   "nl80211: Not the main interface (%s) - do not indicate interface down",
